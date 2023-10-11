@@ -1,0 +1,225 @@
+body {
+    background: var(--Grey-Light-Cards, #F8F7FB);
+}
+
+.main-section-container {
+    max-width: 1312px;
+    margin: 0 auto;
+    padding-top: 67px;
+    
+    padding-bottom: 80px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ms-text{
+    max-width: 665px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ms-title{
+    color: var(--Middle, #504B5A);
+font-family: Poppins;
+font-size: 40px;
+line-height: 56px; /* 140% */
+letter-spacing: 0.8px;
+font-family: 'PoppinsB', sans-serif;
+margin-bottom: 38px;
+}
+
+.ms-micro-section.last{
+    margin-top: 53px;
+}
+
+
+.mms-title{
+    color: var(--Middle, #504B5A);
+font-size: 20px;
+line-height: 27px; /* 135% */
+font-family: 'PoppinsB', sans-serif;
+margin-bottom: 13px;
+}
+
+
+/* Investor Section style */
+
+.investor-section {
+    background-color: #fff;
+}
+
+.investor-section-container {
+    max-width: 1028px;
+    margin: 0 auto;
+    padding: 30px 0 20px 0;
+}
+
+.is-title {
+    color: var(--Middle, #504B5A);
+text-align: center;
+font-family: 'PoppinsB', sans-serif;
+font-size: 20px;
+line-height: 27px; /* 135% */
+margin-bottom: 20px;
+}
+
+.is-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Our story section */
+
+.story-section-container {
+    max-width: 1312px;
+    margin: 0 auto;
+    padding: 70px 0 44px 0;
+}
+
+.ssc-title {
+    display: flex;
+    justify-content: center;
+    color: var(--Middle, #504B5A);
+font-family: 'PoppinsB', sans-serif;
+font-size: 40px;
+line-height: 56px; /* 140% */
+letter-spacing: 0.8px;
+margin-bottom: 33px;
+}
+
+.story-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.story-text{
+    max-width: 1083px;
+    color: var(--Middle, #504B5A);
+font-size: 17px;
+line-height: 26px;
+}
+
+.story-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 168px;
+    height: 168px;
+    border: 8px solid var(--Grey-Light-BG, #f6f5f8);;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    filter: drop-shadow(8px 8px 24px rgba(80, 75, 90, 0.08)) drop-shadow(-4px -4px 8px rgba(255, 255, 255, 0.75));
+
+}
+
+
+.story-photo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 1360px) {
+    .main-section-container, .investor-section-container, .story-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @media screen and (max-width: 1320px) {
+        .story-text {
+            max-width: 900px;
+        }
+    }
+
+    @media screen and (max-width: 1220px) {
+        .ms-img {
+            max-width: 400px;
+        }
+
+        .ms-img  svg {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1115px) {
+        .story-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .story-photo {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (max-width: 1055px) {
+        .ms-text {
+            max-width: 580px;
+        }
+
+        .mms-text {
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (max-width: 980px) {
+        .is-logo-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr ;
+        }
+
+        .is-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .mms-text {
+            font-size: 14px;
+        }
+
+        .ms-text {
+            max-width: 500px;
+        }
+
+        .story-text {
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (max-width: 860px) {
+        .flex-container {
+            flex-direction: column;
+        }
+
+        .ms-text {
+            max-width: unset;
+        }
+
+        .main-section-container {
+            padding-bottom: 0 !important;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .ssc-title, .ms-title {
+            font-size: 30px;
+        }
+
+        .is-logo-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr ;
+        }
+    }
+}
