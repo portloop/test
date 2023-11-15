@@ -17,7 +17,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'website' => $website,
             'goal' => $goal,
             'typebusiness' => $typeBusiness,
-            'text' => $text
+            'text' => $text,
+            'lead_status' => 'active_lead',
+            'hubspot_owner_id' => '1285136351'
         ]
     ];
 
@@ -30,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // 1 for contact list 'first'
         // $listEndpoint = 'https://api.hubapi.com/contacts/v1/lists/1/add';
         // 2 for contact list 'Second'
-        $listEndpoint = 'https://api.hubapi.com/contacts/v1/lists/9/add';
+        $listEndpoint = 'https://api.hubapi.com/contacts/v1/lists/106/add';
 
         $response = hubspotAPIRequest($list, $listEndpoint);
         if (isset($response->updated) && !empty($response->updated)) {
