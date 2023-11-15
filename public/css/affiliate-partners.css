@@ -1,0 +1,128 @@
+.first-partner-section__container .classic-text {
+    max-width: 616px;
+}
+
+.partner-cta-section {
+    padding-top: 67px;
+    padding-bottom: 85px;
+}
+
+.first-partner-section__text_subtitle {
+    max-width: 475px;
+}
+
+.partner-benefits-section__container {
+    max-width: 1312px;
+    margin: 0 auto;
+}
+
+.partner-benefits-section__item {
+    width: 271px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.partner-benefits-section__item_title {
+    margin: 16px auto 8px auto;
+    color: var(--Middle, #504B5A);
+font-family: 'PoppinsB', sans-serif;
+font-size: 20px;
+line-height: 27px; /* 135% */
+}
+
+.partner-benefits-section__item_subtitle {
+    color: var(--Middle, #504B5A);
+font-size: 17px;
+line-height: 23px; /* 135.294% */
+margin-bottom: 24px;
+height: 92px;
+}
+
+.partner-benefits-section__item .colors-btn {
+    width: 140px;
+height: 32px;
+color: var(--White, #FFF);
+font-size: 15px;
+line-height: 20px; /* 133.333% */
+}
+
+.partner-benefits-section__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.partner-cta-text__container .partner-cta-text {
+    max-width: unset !important;
+}
+
+.first-partner-section__text_subtitle.last {
+    max-width: 500px !important;
+}
+
+.first-partner-section.last {
+    position: relative;
+}
+
+.star1 {
+    position: absolute;
+    right: 0;
+    top: 36px;
+}
+
+.star2 {
+    position: absolute;
+    right: 782px;
+    bottom: 43px;
+}
+
+@media screen and (max-width: 1360px) {
+    .partner-benefits-section__container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1180px) {
+    .partner-benefits-section__container {
+        flex-wrap: wrap;
+        max-width: 700px;
+    }
+
+    .partner-benefits-section__item:nth-child(1), .partner-benefits-section__item:nth-child(2) {
+        margin-bottom: 40px;
+    }
+    
+    .star2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .first-partner-section__buttons {
+        justify-content: center;
+    }
+
+    .first-partner-section__text_subtitle.last, .first-partner-section__text_subtitle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 622px) {
+    .partner-benefits-section__container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .partner-benefits-section__item {
+        margin-bottom: 50px;
+    }
+
+    .partner-benefits-section__item:last-child {
+        margin-bottom: 0;
+    }
+}

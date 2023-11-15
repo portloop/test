@@ -1,0 +1,123 @@
+.first-partner-section .first-partner-section__text_title {
+    max-width: 575px;
+}
+
+.why-section-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 869px;
+    margin: 0 auto;
+    margin-bottom: 82px;
+}
+
+.why-section-item_text {
+    max-width: 609px;
+}
+
+.why-section-item_text_title {
+color: var(--Middle, #504B5A);
+font-family: 'PoppinsB', sans-serif;
+font-size: 20px;
+line-height: 27px; /* 135% */
+margin-bottom: 18px;
+}
+
+.why-section-item_text_subtitle {
+    color: var(--Middle, #504B5A);
+font-size: 17px;
+line-height: 23px; /* 135.294% */
+}
+
+.partner-benefits-section__container {
+    flex-direction: column;
+}
+
+.first-partner-section__text_subtitle:last-child {
+    margin: 0 auto;
+}
+
+.logo-partner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--Middle, #504B5A);
+text-align: center;
+font-family: 'PoppinsB', sans-serif;
+font-size: 20px;
+line-height: 27px; /* 135% */
+}
+
+.find-partner-section {
+    background: transparent;
+}
+
+
+@media screen and (max-width: 1180px) {
+    .why-section-item {
+        width: 80%;
+    }
+
+    .partner-benefits-section__container {
+        max-width: unset;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .why-section-item {
+        width: 100%;
+    }
+
+    .first-partner-section__image svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .first-partner-section__image {
+        max-width: 350px;
+        max-height: 350px;
+    }
+}
+
+
+@media screen and (max-width: 940px) {
+    .first-partner-section__text_title, .partner-cta-text__title {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .why-section-item {
+        flex-direction: column;
+    }
+
+    .why-section-item:nth-child(2) .why-section-item_text {
+        order: 2;
+    }
+
+    .why-section-item_text {
+        margin-top: 40px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .first-partner-section__text_title, .partner-cta-text__title {
+        font-size: 22px;
+    }
+    .partner-cta-section {
+        padding-top: 20px;
+    }
+
+    .why-section-item_text_subtitle {
+        font-size: 15px;
+    }
+
+    .why-section-item:last-child {
+        margin-bottom: 20px;
+    }
+
+    .logo-partner {
+        font-size: 16px;
+    }
+}

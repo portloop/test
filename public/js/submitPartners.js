@@ -159,7 +159,7 @@ window.addEventListener('DOMContentLoaded', () => {
         captchaToken = response;
         $.ajax({
             method: 'POST',
-            url: './php-scripts/submitPartner.php',
+            url: '../php-scripts/submitPartner.php',
             data: {
                 firstName: fName.value,
                 lastName: lName.value,
