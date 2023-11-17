@@ -15,6 +15,7 @@ const features1Submit = require('./forms/analytics-dashboard.js');
 const features2Submit = require('./forms/custom-reports.js'); 
 const features3Submit = require('./forms/track-your-goals.js'); 
 const features4Submit = require('./forms/smart-alerts-and-insights.js'); 
+const subscribeSubmit = require('./forms/subscribe.js'); 
 
 
 const app = express();
@@ -171,6 +172,7 @@ router.use('/analytics-dashboard', features1Submit);
 router.use('/custom-reports', features2Submit);
 router.use('/track-your-goals', features3Submit);
 router.use('/smart-alerts-and-insights', features4Submit);
+router.use('/subscribe', subscribeSubmit);
 
 app.use('/', router);
 
