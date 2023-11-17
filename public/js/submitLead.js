@@ -87,7 +87,7 @@ let form = $('#validationOnSubmit'),
     if (!hasError) {
       $.ajax({
         method: 'POST',
-        url: './php-scripts/submitForm.php',
+        url: 'http://localhost:3000/submit-mainPage-form/submit-form',
         data: { name: name.value, email: email.value, website: website.value, phone: phone.value },
       })
       .done(function(response) {

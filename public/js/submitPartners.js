@@ -159,27 +159,26 @@ window.addEventListener('DOMContentLoaded', () => {
         captchaToken = response;
         $.ajax({
             method: 'POST',
-            url: '../php-scripts/submitPartner.php', // Обратите внимание на измененный путь
+            url: 'http://localhost:3000/submit-partner-form/submit-form', // Обновленный путь
             data: {
-                firstName: fName.value,
-                lastName: lName.value,
-                email: email.value,
-                website: website.value,
-                goal: goalSelect.value,
-                typeBusiness: typeBusinessSelect.value,
-                text: anyText.value
-
+              firstName: fName.value,
+              lastName: lName.value,
+              email: email.value,
+              website: website.value,
+              goal: goalSelect.value,
+              typeBusiness: typeBusinessSelect.value,
+              text: anyText.value
             },
-        })
+          })
             .done(function (response) {
-                $('.partner-form').fadeOut();
-                $('.partner-success-submit').fadeIn();
+              $('.partner-form').fadeOut();
+              $('.partner-success-submit').fadeIn();
             })
             .fail(function (response) {
-                $('.partner-form').fadeOut();
-                $('.partner-success-submit').fadeIn();
-            })
-        form.reset();
+              $('.partner-form').fadeOut();
+              $('.partner-success-submit').fadeIn();
+            });
+          form.reset();
       }
       
       window.partnerForm = partnerForm;
