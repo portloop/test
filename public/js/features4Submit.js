@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
                 $.ajax({
                     method: 'POST', 
-                    url: 'http://localhost:3000/smart-alerts-and-insights/submit-form',
+                    url: ' https://yourufx.space/smart-alerts-and-insights/submit-form',
                     data: { email : qemail.value },
                   })
                   .done(function (response) {

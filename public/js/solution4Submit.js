@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
                 $.ajax({
                     method: 'POST', 
-                    url: 'http://localhost:3000/merchandising-optimization/submit-form',
+                    url: ' https://yourufx.space/merchandising-optimization/submit-form',
                     data: { email : qemail.value },
                   })
                   .done(function (response) {

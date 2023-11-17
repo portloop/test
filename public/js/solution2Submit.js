@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
               $.ajax({
                   method: 'POST', 
-                  url: 'http://localhost:3000/automatic-reporting/submit-form',
+                  url: ' https://yourufx.space/automatic-reporting/submit-form',
                   data: { email : qemail.value },
                 })
                 .done(function (response) {

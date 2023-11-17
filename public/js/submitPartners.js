@@ -159,7 +159,7 @@ window.addEventListener('DOMContentLoaded', () => {
         captchaToken = response;
         $.ajax({
             method: 'POST',
-            url: 'http://localhost:3000/submit-partner-form/submit-form', // Обновленный путь
+            url: ' https://yourufx.space/submit-partner-form/submit-form', // Обновленный путь
             data: {
               firstName: fName.value,
               lastName: lName.value,

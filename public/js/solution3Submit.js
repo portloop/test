@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
                 $.ajax({
                     method: 'POST', 
-                    url: 'http://localhost:3000/ltv-and-customer-retention/submit-form',
+                    url: ' https://yourufx.space/ltv-and-customer-retention/submit-form',
                     data: { email : qemail.value },
                   })
                   .done(function (response) {
