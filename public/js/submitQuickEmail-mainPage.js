@@ -59,7 +59,7 @@ submitEmail.addEventListener('click', (event) => {
       captchaTokenQM = response;
       $.ajax({
         method: 'POST', 
-        url: 'http://yourufx.space/submit-mainPageSimple-form/submit-form',
+        url: 'https://yourufx.space/submit-mainPageSimple-form/submit-form',
         data: { email : qemail.value },
       })
       .done(function (response) {
