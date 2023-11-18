@@ -12,7 +12,7 @@ router.post('/submit-form', async (req, res) => {
         firstname: name,
         website,
         goal,
-        typeBusiness,
+        typebusiness,
         phone,
         hs_lead_status: 'New',
         hubspot_owner_id: '1285136351',
