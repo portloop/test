@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.post('/submit-form', async (req, res) => {
   try {
-    const { name, email, website, phone, goal, typebusiness } = req.body;
+    const { name, email, website, phone, goal, typebusiness, text } = req.body;
 
     const properties = {
       properties: {
@@ -14,6 +14,7 @@ router.post('/submit-form', async (req, res) => {
         goal,
         typebusiness,
         phone,
+        text,
         hs_lead_status: 'New',
         hubspot_owner_id: '1285136351',
       },

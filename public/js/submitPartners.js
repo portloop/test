@@ -166,7 +166,7 @@ window.addEventListener('DOMContentLoaded', () => {
               email: email.value,
               website: website.value,
               goal: goalSelect.value,
-              typeBusiness: typeBusinessSelect.value,
+              typebusiness: typeBusinessSelect.value,
               text: anyText.value
             },
           })
