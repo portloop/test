@@ -21,7 +21,7 @@ router.post('/submit-form', async (req, res) => {
 
     if (response.id) {
       const list = { vids: [response.id] };
-      const listEndpoint = 'https://api.hubapi.com/contacts/v1/lists/16/add'; // Replace with your list endpoint
+      const listEndpoint = 'https://api.hubapi.com/contacts/v1/lists/108/add'; // Replace with your list endpoint
 
       const listResponse = await hubspotAPIRequest(list, listEndpoint);
 

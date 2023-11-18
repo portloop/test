@@ -63,7 +63,7 @@ sumbitBtns.forEach(item => {
       captchaToken = response;
       $.ajax({
         method: 'POST',
-        url: 'https://yourufx.space/subscribe/submit-form',
+        url: 'http://localhost:3000/subscribe/submit-form',
         data: {
             email : emailInput.value
 
