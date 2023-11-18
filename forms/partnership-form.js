@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.post('/submit-form', async (req, res) => {
   try {
-    const { name, email, website, phone, goal, typeBusiness } = req.body;
+    const { name, email, website, phone, goal, typebusiness } = req.body;
 
     const properties = {
       properties: {
