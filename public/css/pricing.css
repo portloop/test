@@ -285,7 +285,7 @@ margin-bottom: 16px;
 }
 
 .i-box {
-    height: 268px;
+    height: 468px;
     margin-bottom: 16px;
 }
 
@@ -619,6 +619,27 @@ text-decoration: none;
 
 
 } */
+
+
+@media screen and (max-width: 1375px) {
+    .bold-price span.amount {
+        font-size: 22px;
+    }
+
+    .bold-price span.currency, .info-box a {
+        font-size: 18px;
+    }
+
+    .discount {
+        font-size: 16px;
+    }
+
+    .i-box {
+        height: 292px;
+    }
+
+
+}
 
 @media screen and (max-width: 1280px) {
 

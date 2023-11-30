@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.target && e.target.classList.contains('send-data')) {
         e.preventDefault();
       } else {
-        scrollToForm.scrollIntoView({ block: "start", behavior: "smooth" });
-
+        // scrollToForm.scrollIntoView({ block: "start", behavior: "smooth" });
+        window.location.href = 'https://app.octup.com/Signup'
       }
     })
   }))

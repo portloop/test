@@ -61,12 +61,12 @@ document.addEventListener('DOMContentLoaded', () => {
             amount.innerHTML = '< $500,000';
             if (monthly) {
                 price[0].innerHTML = '99'
-                price[1].innerHTML = '99'
+                price[1].innerHTML = '149'
             } else {
                 price[0].innerHTML = '83'
-                price[1].innerHTML = '83'
+                price[1].innerHTML = '119'
                 discont[0].innerHTML = '$99'
-                discont[1].innerHTML = '$99'
+                discont[1].innerHTML = '$149'
             }
         }
         if (rangeInput.value > 45) {

@@ -648,7 +648,7 @@
     }
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 881px) {
     .focus-section .focus-animation {
         margin-top: -40px;
         z-index: -1;
